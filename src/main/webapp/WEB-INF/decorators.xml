@@ -7,11 +7,7 @@
     </decorator>
   
     <decorator name="admin" page="admin.jsp">
-    	<pattern>/admin</pattern>
-       <pattern>/admin/</pattern>
-       <pattern>/admin/contentNotification</pattern>
-       <pattern>/admin/listUsers</pattern>
-       <pattern>/admin/composeSchedule</pattern>
+    	<pattern>/admin*</pattern>
     </decorator>
     
     
