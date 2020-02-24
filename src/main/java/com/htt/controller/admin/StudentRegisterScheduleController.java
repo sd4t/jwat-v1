@@ -5,9 +5,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller(value = "studentRegisterScheduleControllerOfAdmin")
-public class studentRegisterSchedule {
+public class StudentRegisterScheduleController {
 	@RequestMapping(value = "/admin/studentRegisterSchedule", method = RequestMethod.GET)
-	public String StudentRegisterSchedule() {
+	public String StudentRegisterSchedulePage() {
 		return "admin/studentRegisterSchedule";
 	}
 }

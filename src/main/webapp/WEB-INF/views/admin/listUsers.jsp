@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 <!-- start add user -->
 <div class="container-fluid">
-	<!-- start add notification and search -->
+	<!-- start add user and search -->
 	<div class="row">
 		<div class="col-md-6"></div>
 		<div class="col-md-6"

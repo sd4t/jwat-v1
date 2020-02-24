@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller(value = "contenNotificationControllerOfAdmin")
-public class ContentNotification {
+public class ContentNotificationController {
 
 	@RequestMapping(value = "/admin/contentNotification", method = RequestMethod.GET)
-	public String homePage() {
+	public String ContentNotificationPage() {
 		return "admin/contentNotification";
 	}
 }
