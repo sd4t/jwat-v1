@@ -9,8 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class ContentNotification {
 
 	@RequestMapping(value = "/admin/contentNotification", method = RequestMethod.GET)
-	public ModelAndView homePage() {
-		ModelAndView mav = new ModelAndView("admin/contentNotification");
-		return mav;
+	public String homePage() {
+		return "admin/contentNotification";
 	}
 }

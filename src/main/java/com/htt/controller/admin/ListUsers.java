@@ -7,8 +7,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller(value = "listUsersControllerOfAdmin")
 public class ListUsers {
 	@RequestMapping(value = "/admin/listUsers", method = RequestMethod.GET)
-	public ModelAndView homePage() {
-		ModelAndView mav = new ModelAndView("admin/listUsers");
-		return mav;
+	public String homePage() {
+		return "admin/listUsers";
 	}
 }
