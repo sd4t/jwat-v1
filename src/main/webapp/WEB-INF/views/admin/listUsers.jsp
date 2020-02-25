@@ -5,8 +5,7 @@
 	<!-- start add user and search -->
 	<div class="row">
 		<div class="col-md-6"></div>
-		<div class="col-md-6"
-			style="margin-bottom: 10px; margin-top: 10px; padding-right: 10px;">
+		<div class="col-md-6 div-search">
 			<div class="row">
 				<div class="col-md-5">
 					<!-- start add user  -->
@@ -39,10 +38,17 @@
 	<!-- start list users -->
 	<div>
 		<h2 class="h2-admin">
-			DANH SÁCH THÀNH VIÊN <i class="filter"></i>
+			THÀNH VIÊN 
 		</h2>
-
-
+	</div>
+	<div class="div-select-filter">
+		<select name="loaiThongBao" class="select-filter">
+			<option value="dangkylichtraining">Tất cả</option>
+			<option value="thongbaonghi">Jwat 01</option>
+			<option value="thongbaonghi">Jwat 02</option>
+			<option value="thongbaonghi">Jwat 03</option>
+			<option value="thongbaonghi">Jwat 04</option>
+		</select>
 	</div>
 
 

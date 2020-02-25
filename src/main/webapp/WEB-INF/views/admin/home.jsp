@@ -1,14 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-	
+	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!-- start add user -->
 <div class="container-fluid">
 
 	<!-- start add notification and search -->
 	<div class="row">
 		<div class="col-md-6"></div>
-		<div class="col-md-6"
-			style="margin-bottom: 10px; margin-top: 10px; padding-right: 10px;">
+		<div class="col-md-6 div-search">
 			<div class="row">
 				<div class="col-md-5">
 					<!-- start add user  -->
@@ -25,9 +24,10 @@
 							placeholder="Tìm kiếm ..." aria-label="Search">
 						<div class="input-group-append " style="width: 100px">
 							<span
-								class="btn input-group-text red lighten-3 span-search-notifacation"
-								style="width: 50px" id="basic-text1"></span>
+								 class="btn input-group-text red lighten-3 span-search-notifacation"
+								style="width: 50px" id="basic-text1"></span> 
 						</div>
+						
 					</div>
 					
 					<!-- end search -->
@@ -40,23 +40,34 @@
 	<!-- start content notification  -->
 	<div>
 		<h2 class="h2-admin">
-			THÔNG BÁO <i class="filter"></i>
+			THÔNG BÁO
 		</h2>
+		<div class="div-select-filter">
+		<select name="loaiThongBao" class="select-filter">
+			<option value="dangkylichtraining">Tất cả</option>
+			<option value="thongbaonghi">Jwat 01</option>
+			<option value="thongbaonghi">Jwat 02</option>
+			<option value="thongbaonghi">Jwat 03</option>
+			<option value="thongbaonghi">Jwat 04</option>
+		</select>
+	</div>
 	</div>
 	
 	<div >	
 		<ul class="list-group ul-notification-admin">
-			<li
-				class="list-group-item d-flex justify-content-between align-items-center">
-				<div>
-					<a class="a-notification-admin" href="admin/contentNotification">
-						Thông báo v/v Thu học phí HK2 2019-2020 Hệ ĐTĐH Chính quy </a> <span
-						style="color: #2b2b2b; font-size: 16px;">- 18/02/2020 -
-						16:05</span> <span style="color: #f00; font-size: 16px">- *new</span>
-
-				</div> <i class="edit" data-toggle="modal"
-				data-target="#EditNotificationModalCenter"></i> <i class="delete"></i>
-			</li>
+			<c:forEach begin="1" end="9">
+				<li
+					class="list-group-item d-flex justify-content-between align-items-center">
+					<div>
+						<a class="a-notification-admin" href="admin/contentNotification">
+							Thông báo v/v Thu học phí HK2 2019-2020 Hệ ĐTĐH Chính quy </a> <span
+							style="color: #2b2b2b; font-size: 16px;">- 18/02/2020 -
+							16:05</span> <span style="color: #f00; font-size: 16px">- *new</span>
+	
+					</div> <i class="edit" data-toggle="modal"
+					data-target="#EditNotificationModalCenter"></i> <i class="delete"></i>
+				</li>
+			</c:forEach>
 		</ul>
 	</div>
 	<div class="row " style="padding-top: 10px">

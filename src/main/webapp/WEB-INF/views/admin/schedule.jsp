@@ -5,26 +5,28 @@
 	
 	<div style="margin-top: 68px">
 		<h2 class="h2-admin">
-			SOẠN THỜI KHÓA BIỂU </i>
+			THỜI KHÓA BIỂU 
 		</h2>
-
-
+	</div>
+	<div class="div-select-filter">
+		<select name="loaiThongBao" class="select-filter">
+			<option value="thongbaonghi">Jwat 01</option>
+			<option value="thongbaonghi">Jwat 02</option>
+			<option value="thongbaonghi">Jwat 03</option>
+			<option value="thongbaonghi">Jwat 04</option>
+		</select>
 	</div>
 	<div>
 		<form action="/jwat/xemlich" method="post">
 			<div class="input-group md-form form-sm form-2 pl-0 "
 				style="margin-bottom: 5px;">
 				<div class="input-group-prepend">
-					<span class="btn input-group-text red lighten-3 backward"
-						style="width: 50px; background-color: #fff; border-radius: 4px 0px 0px 4px; border: 1px solid #999;"
-						id="basic-text1"></span>
+					<span class="btn input-group-text red lighten-3 backward span-ward"></span>
 				</div>
 				<input id="idinputWeek" type="week" name="weekSoanLich"
 					style="width: 200px; height: 30px; border: 1px solid #999;" />
 				<div class="input-group-append ">
-					<span class="btn input-group-text red lighten-3 forward"
-						style="width: 50px; background-color: #fff; border-radius: 0px 4px 4px 0px; border: 1px solid #999;"
-						id="basic-text1"></span>
+					<span class="btn input-group-text red lighten-3 forward span-ward"></span>
 				</div>
 				
 			</div>

@@ -6,8 +6,7 @@
 	<!-- start  search -->
 	<div class="row">
 		<div class="col-md-6"></div>
-		<div class="col-md-6"
-			style="margin-bottom: 10px; margin-top: 10px; padding-right: 10px;">
+		<div class="col-md-6 div-search">
 			<div class="row">
 				<div class="col-md-5">
 				</div>
@@ -33,17 +32,21 @@
 	<!-- start list users -->
 	<div>
 		<h2 class="h2-admin">
-			TÀI KHOẢN CHỜ DUYỆT <i class="filter"></i>
+			TÀI KHOẢN CHỜ DUYỆT 
 		</h2>
-
-
+	</div>
+	<div class="div-select-filter">
+		Sắp xếp:
+		<select name="loaiThongBao" class="btnSort">
+			<option value="dangkylichtraining">a-z</option>
+			<option value="thongbaonghi">z-a</option>
+		</select>
 	</div>
 	<div class="list-group">
 		<a href="#"
 			class="list-group-item list-group-item-action flex-column align-items-start ">
 			<div class="d-flex w-100 justify-content-between">
 				<h5 class="mb-1 a-list-users">Hoàng Thùy Trang</h5>
-				<small class="text-muted">Jwat 01</small>
 			</div> <small class="text-muted">SĐT: 0352902224 - Email:
 				Tranght636@gmail.com - SN: 16/2/1996 - Địa chỉ: Thôn 8, Nhân Cơ,
 				ĐakRlap, ĐakNong. </small> 
@@ -59,12 +62,6 @@
 
 	</div>
 </div>
-	
-	
-	
-
-			
-	
 	<!-- Modal -->
 	<div class="modal fade" id="modalThongTinTaiKhoan" tabindex="-1"
 		role="dialog" aria-labelledby="exampleModalCenterTitle"

@@ -5,8 +5,7 @@
 	<!-- start add notification and search -->
 	<div class="row">
 		<div class="col-md-6"></div>
-		<div class="col-md-6"
-			style="margin-bottom: 10px; margin-top: 10px; padding-right: 10px;">
+		<div class="col-md-6 div-search">
 			<div class="row">
 				<div class="col-md-5"></div>
 				<div class="col-md-7">
@@ -31,25 +30,57 @@
 	<!-- start content notification  -->
 	<div>
 		<h2 class="h2-admin">
-			THÔNG TIN ĐĂNG KÝ LỊCH <i class="filter"></i>
+			THÔNG TIN ĐĂNG KÝ LỊCH 
 		</h2>
 	</div>
 	<div class="input-group md-form form-sm form-2 pl-0 "
 		style="margin-bottom: 5px;">
 		<div class="input-group-prepend">
-			<span class="btn input-group-text red lighten-3 backward"
-				style="width: 50px; background-color: #fff; border-radius: 4px 0px 0px 4px; border: 1px solid #999;"
-				id="basic-text1"></span>
+			<span class="btn input-group-text red lighten-3 backward span-ward"></span>
 		</div>
 		<input id="idinputWeek" type="week" name="weekSoanLich"
 			style="width: 200px; height: 30px; border: 1px solid #999;" />
 		<div class="input-group-append ">
-			<span class="btn input-group-text red lighten-3 forward"
-				style="width: 50px; background-color: #fff; border-radius: 0px 4px 4px 0px; border: 1px solid #999;"
-				id="basic-text1"></span>
+			<span class="btn input-group-text red lighten-3 forward span-ward"></span>
 		</div>
 
 	</div>
+	
+	<div class="div-select-filter">
+	Lọc:
+		<select name="loaiThongBao" class="slbtnSort">
+			<option value="dangkylichtraining">Tất cả</option>
+			<option value="thongbaonghi">Jwat 01</option>
+			<option value="thongbaonghi">Jwat 02</option>
+			<option value="thongbaonghi">Jwat 03</option>
+			<option value="thongbaonghi">Jwat 04</option>
+		</select>
+		<select name="loaiThongBao" class="slbtnSort">
+			<option value="dangkylichtraining">Tất cả</option>
+			<option value="thongbaonghi">Chưa đăng ký</option>
+			<option value="thongbaonghi">Đăng ký sáng thứ 2</option>
+			<option value="thongbaonghi">Đăng ký chiều thứ 2</option>
+			<option value="thongbaonghi">Đăng ký sáng thứ 3</option>
+			<option value="thongbaonghi">Đăng ký chiều thứ 3</option>
+			<option value="thongbaonghi">Đăng ký sáng thứ 4</option>
+			<option value="thongbaonghi">Đăng ký chiều thứ 4</option>
+			<option value="thongbaonghi">Đăng ký sáng thứ 5</option>
+			<option value="thongbaonghi">Đăng ký chiều thứ 5</option>
+			<option value="thongbaonghi">Đăng ký sáng thứ 6</option>
+			<option value="thongbaonghi">Đăng ký chiều thứ 6</option>
+			<option value="thongbaonghi">Đăng ký sáng thứ 7</option>
+			<option value="thongbaonghi">Đăng ký chiều thứ 7</option>
+			<option value="thongbaonghi">Đăng ký sáng chủ nhật</option>
+			<option value="thongbaonghi">Đăng ký chiều chủ nhật</option>
+		</select>
+		Sắp xếp:
+		<select name="loaiThongBao" class="slbtnSort">
+			<option value="dangkylichtraining">a-z</option>
+			<option value="thongbaonghi">z-a</option>
+		</select>
+		
+	</div>
+	
 	<table class="table table-striped table-bordered"
 		style="text-align: center;">
 		<thead>
